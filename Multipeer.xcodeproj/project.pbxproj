@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F66295222BDCD60700DB9712 /* MultipeerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66295212BDCD60700DB9712 /* MultipeerApp.swift */; };
+		F66295242BDCD60700DB9712 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66295232BDCD60700DB9712 /* ContentView.swift */; };
+		F66295262BDCD60800DB9712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66295252BDCD60800DB9712 /* Assets.xcassets */; };
+		F66295292BDCD60800DB9712 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66295282BDCD60800DB9712 /* Preview Assets.xcassets */; };
+		F66295332BDCD60800DB9712 /* MultipeerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66295322BDCD60800DB9712 /* MultipeerTests.swift */; };
+		F662953D2BDCD60800DB9712 /* MultipeerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F662953C2BDCD60800DB9712 /* MultipeerUITests.swift */; };
+		F662953F2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F662953E2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F662952F2BDCD60800DB9712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66295162BDCD60700DB9712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F662951D2BDCD60700DB9712;
+			remoteInfo = Multipeer;
+		};
+		F66295392BDCD60800DB9712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66295162BDCD60700DB9712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F662951D2BDCD60700DB9712;
+			remoteInfo = Multipeer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F662951E2BDCD60700DB9712 /* Multipeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multipeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66295212BDCD60700DB9712 /* MultipeerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerApp.swift; sourceTree = "<group>"; };
+		F66295232BDCD60700DB9712 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F66295252BDCD60800DB9712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F66295282BDCD60800DB9712 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F662952E2BDCD60800DB9712 /* MultipeerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipeerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66295322BDCD60800DB9712 /* MultipeerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerTests.swift; sourceTree = "<group>"; };
+		F66295382BDCD60800DB9712 /* MultipeerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipeerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F662953C2BDCD60800DB9712 /* MultipeerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerUITests.swift; sourceTree = "<group>"; };
+		F662953E2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F662951B2BDCD60700DB9712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F662952B2BDCD60800DB9712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66295352BDCD60800DB9712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F66295152BDCD60700DB9712 = {
+			isa = PBXGroup;
+			children = (
+				F66295202BDCD60700DB9712 /* Multipeer */,
+				F66295312BDCD60800DB9712 /* MultipeerTests */,
+				F662953B2BDCD60800DB9712 /* MultipeerUITests */,
+				F662951F2BDCD60700DB9712 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F662951F2BDCD60700DB9712 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F662951E2BDCD60700DB9712 /* Multipeer.app */,
+				F662952E2BDCD60800DB9712 /* MultipeerTests.xctest */,
+				F66295382BDCD60800DB9712 /* MultipeerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F66295202BDCD60700DB9712 /* Multipeer */ = {
+			isa = PBXGroup;
+			children = (
+				F66295212BDCD60700DB9712 /* MultipeerApp.swift */,
+				F66295232BDCD60700DB9712 /* ContentView.swift */,
+				F66295252BDCD60800DB9712 /* Assets.xcassets */,
+				F66295272BDCD60800DB9712 /* Preview Content */,
+			);
+			path = Multipeer;
+			sourceTree = "<group>";
+		};
+		F66295272BDCD60800DB9712 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F66295282BDCD60800DB9712 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F66295312BDCD60800DB9712 /* MultipeerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F66295322BDCD60800DB9712 /* MultipeerTests.swift */,
+			);
+			path = MultipeerTests;
+			sourceTree = "<group>";
+		};
+		F662953B2BDCD60800DB9712 /* MultipeerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F662953C2BDCD60800DB9712 /* MultipeerUITests.swift */,
+				F662953E2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift */,
+			);
+			path = MultipeerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F662951D2BDCD60700DB9712 /* Multipeer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66295422BDCD60800DB9712 /* Build configuration list for PBXNativeTarget "Multipeer" */;
+			buildPhases = (
+				F662951A2BDCD60700DB9712 /* Sources */,
+				F662951B2BDCD60700DB9712 /* Frameworks */,
+				F662951C2BDCD60700DB9712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Multipeer;
+			productName = Multipeer;
+			productReference = F662951E2BDCD60700DB9712 /* Multipeer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F662952D2BDCD60800DB9712 /* MultipeerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66295452BDCD60800DB9712 /* Build configuration list for PBXNativeTarget "MultipeerTests" */;
+			buildPhases = (
+				F662952A2BDCD60800DB9712 /* Sources */,
+				F662952B2BDCD60800DB9712 /* Frameworks */,
+				F662952C2BDCD60800DB9712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F66295302BDCD60800DB9712 /* PBXTargetDependency */,
+			);
+			name = MultipeerTests;
+			productName = MultipeerTests;
+			productReference = F662952E2BDCD60800DB9712 /* MultipeerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F66295372BDCD60800DB9712 /* MultipeerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66295482BDCD60800DB9712 /* Build configuration list for PBXNativeTarget "MultipeerUITests" */;
+			buildPhases = (
+				F66295342BDCD60800DB9712 /* Sources */,
+				F66295352BDCD60800DB9712 /* Frameworks */,
+				F66295362BDCD60800DB9712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F662953A2BDCD60800DB9712 /* PBXTargetDependency */,
+			);
+			name = MultipeerUITests;
+			productName = MultipeerUITests;
+			productReference = F66295382BDCD60800DB9712 /* MultipeerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F66295162BDCD60700DB9712 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F662951D2BDCD60700DB9712 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F662952D2BDCD60800DB9712 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F662951D2BDCD60700DB9712;
+					};
+					F66295372BDCD60800DB9712 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F662951D2BDCD60700DB9712;
+					};
+				};
+			};
+			buildConfigurationList = F66295192BDCD60700DB9712 /* Build configuration list for PBXProject "Multipeer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F66295152BDCD60700DB9712;
+			productRefGroup = F662951F2BDCD60700DB9712 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F662951D2BDCD60700DB9712 /* Multipeer */,
+				F662952D2BDCD60800DB9712 /* MultipeerTests */,
+				F66295372BDCD60800DB9712 /* MultipeerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F662951C2BDCD60700DB9712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66295292BDCD60800DB9712 /* Preview Assets.xcassets in Resources */,
+				F66295262BDCD60800DB9712 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F662952C2BDCD60800DB9712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66295362BDCD60800DB9712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F662951A2BDCD60700DB9712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66295242BDCD60700DB9712 /* ContentView.swift in Sources */,
+				F66295222BDCD60700DB9712 /* MultipeerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F662952A2BDCD60800DB9712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66295332BDCD60800DB9712 /* MultipeerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66295342BDCD60800DB9712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F662953F2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift in Sources */,
+				F662953D2BDCD60800DB9712 /* MultipeerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F66295302BDCD60800DB9712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F662951D2BDCD60700DB9712 /* Multipeer */;
+			targetProxy = F662952F2BDCD60800DB9712 /* PBXContainerItemProxy */;
+		};
+		F662953A2BDCD60800DB9712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F662951D2BDCD60700DB9712 /* Multipeer */;
+			targetProxy = F66295392BDCD60800DB9712 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F66295402BDCD60800DB9712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F66295412BDCD60800DB9712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F66295432BDCD60800DB9712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Multipeer/Preview Content\"";
+				DEVELOPMENT_TEAM = 49V8Q5W76J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.Multipeer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F66295442BDCD60800DB9712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Multipeer/Preview Content\"";
+				DEVELOPMENT_TEAM = 49V8Q5W76J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.Multipeer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F66295462BDCD60800DB9712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49V8Q5W76J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MultipeerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multipeer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Multipeer";
+			};
+			name = Debug;
+		};
+		F66295472BDCD60800DB9712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49V8Q5W76J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MultipeerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multipeer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Multipeer";
+			};
+			name = Release;
+		};
+		F66295492BDCD60800DB9712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49V8Q5W76J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MultipeerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Multipeer;
+			};
+			name = Debug;
+		};
+		F662954A2BDCD60800DB9712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49V8Q5W76J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MultipeerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Multipeer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F66295192BDCD60700DB9712 /* Build configuration list for PBXProject "Multipeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66295402BDCD60800DB9712 /* Debug */,
+				F66295412BDCD60800DB9712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66295422BDCD60800DB9712 /* Build configuration list for PBXNativeTarget "Multipeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66295432BDCD60800DB9712 /* Debug */,
+				F66295442BDCD60800DB9712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66295452BDCD60800DB9712 /* Build configuration list for PBXNativeTarget "MultipeerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66295462BDCD60800DB9712 /* Debug */,
+				F66295472BDCD60800DB9712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66295482BDCD60800DB9712 /* Build configuration list for PBXNativeTarget "MultipeerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66295492BDCD60800DB9712 /* Debug */,
+				F662954A2BDCD60800DB9712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F66295162BDCD60700DB9712 /* Project object */;
+}
