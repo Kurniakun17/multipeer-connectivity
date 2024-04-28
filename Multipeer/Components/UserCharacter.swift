@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct UserCharacter: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    var imgName: String
+    var isNavigating: Bool = false
+    @State var isAnimating = false
+    @Binding var selectedChar: String
+    @Binding var isSheetOpen: Bool
+    @State var isActive: Bool = false
 
-#Preview {
-    UserCharacter()
+    var body: some View {
+        Button(action: {
+            isAnimating.toggle()
+            selectedChar = imgName
+            isSheetOpen.toggle()
+            if isNavigating {
+                isActive = true
+            }
+        }) {
+            Image(imgName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .scaleEffect(x: isAnimating ? 0.9 : 1, y: isAnimating ? 0.9 : 1, anchor: .center)
+        }
+    }
 }

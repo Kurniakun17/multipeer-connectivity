@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F65334982BDE32D900D9FD61 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65334972BDE32D900D9FD61 /* GameService.swift */; };
+		F653349C2BDE346600D9FD61 /* SelectCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F653349B2BDE346600D9FD61 /* SelectCharacter.swift */; };
+		F653349E2BDE354F00D9FD61 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F653349D2BDE354F00D9FD61 /* Menu.swift */; };
 		F66295222BDCD60700DB9712 /* MultipeerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66295212BDCD60700DB9712 /* MultipeerApp.swift */; };
 		F66295242BDCD60700DB9712 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66295232BDCD60700DB9712 /* ContentView.swift */; };
 		F66295262BDCD60800DB9712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66295252BDCD60800DB9712 /* Assets.xcassets */; };
 		F66295292BDCD60800DB9712 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66295282BDCD60800DB9712 /* Preview Assets.xcassets */; };
-		F66295332BDCD60800DB9712 /* MultipeerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66295322BDCD60800DB9712 /* MultipeerTests.swift */; };
-		F662953D2BDCD60800DB9712 /* MultipeerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F662953C2BDCD60800DB9712 /* MultipeerUITests.swift */; };
-		F662953F2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F662953E2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift */; };
+		F66295502BDCD8EE00DB9712 /* UserCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F662954F2BDCD8EE00DB9712 /* UserCharacter.swift */; };
+		F66295532BDCE7F400DB9712 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66295522BDCE7F400DB9712 /* Lobby.swift */; };
+		F66295572BDCF68B00DB9712 /* MPConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66295562BDCF68B00DB9712 /* MPConnectionManager.swift */; };
+		F6D18D5A2BDD4D5E007E1566 /* MPGameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D18D592BDD4D5E007E1566 /* MPGameMove.swift */; };
+		F6D18D5C2BDD5970007E1566 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D18D5B2BDD5970007E1566 /* Ingredient.swift */; };
+		F6D18D5E2BDE0CC7007E1566 /* MPPeersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D18D5D2BDE0CC7007E1566 /* MPPeersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +40,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F65334972BDE32D900D9FD61 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		F653349B2BDE346600D9FD61 /* SelectCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacter.swift; sourceTree = "<group>"; };
+		F653349D2BDE354F00D9FD61 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		F662951E2BDCD60700DB9712 /* Multipeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multipeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66295212BDCD60700DB9712 /* MultipeerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerApp.swift; sourceTree = "<group>"; };
 		F66295232BDCD60700DB9712 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F66295252BDCD60800DB9712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F66295282BDCD60800DB9712 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F662952E2BDCD60800DB9712 /* MultipeerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipeerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F66295322BDCD60800DB9712 /* MultipeerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerTests.swift; sourceTree = "<group>"; };
 		F66295382BDCD60800DB9712 /* MultipeerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipeerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F662953C2BDCD60800DB9712 /* MultipeerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerUITests.swift; sourceTree = "<group>"; };
-		F662953E2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F662954F2BDCD8EE00DB9712 /* UserCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCharacter.swift; sourceTree = "<group>"; };
+		F66295522BDCE7F400DB9712 /* Lobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
+		F66295542BDCF5E600DB9712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F66295562BDCF68B00DB9712 /* MPConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPConnectionManager.swift; sourceTree = "<group>"; };
+		F6D18D592BDD4D5E007E1566 /* MPGameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPGameMove.swift; sourceTree = "<group>"; };
+		F6D18D5B2BDD5970007E1566 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		F6D18D5D2BDE0CC7007E1566 /* MPPeersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPPeersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				F66295202BDCD60700DB9712 /* Multipeer */,
-				F66295312BDCD60800DB9712 /* MultipeerTests */,
-				F662953B2BDCD60800DB9712 /* MultipeerUITests */,
 				F662951F2BDCD60700DB9712 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +105,11 @@
 		F66295202BDCD60700DB9712 /* Multipeer */ = {
 			isa = PBXGroup;
 			children = (
+				F66295552BDCF66800DB9712 /* MultipeerConnectivity */,
+				F66295542BDCF5E600DB9712 /* Info.plist */,
+				F662954E2BDCD8D900DB9712 /* Components */,
+				F662954D2BDCD8CA00DB9712 /* Model */,
+				F662954C2BDCD8C600DB9712 /* View */,
 				F66295212BDCD60700DB9712 /* MultipeerApp.swift */,
 				F66295232BDCD60700DB9712 /* ContentView.swift */,
 				F66295252BDCD60800DB9712 /* Assets.xcassets */,
@@ -110,21 +126,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F66295312BDCD60800DB9712 /* MultipeerTests */ = {
+		F662954C2BDCD8C600DB9712 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F66295322BDCD60800DB9712 /* MultipeerTests.swift */,
+				F66295522BDCE7F400DB9712 /* Lobby.swift */,
+				F653349D2BDE354F00D9FD61 /* Menu.swift */,
 			);
-			path = MultipeerTests;
+			path = View;
 			sourceTree = "<group>";
 		};
-		F662953B2BDCD60800DB9712 /* MultipeerUITests */ = {
+		F662954D2BDCD8CA00DB9712 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F662953C2BDCD60800DB9712 /* MultipeerUITests.swift */,
-				F662953E2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift */,
+				F6D18D5B2BDD5970007E1566 /* Ingredient.swift */,
+				F65334972BDE32D900D9FD61 /* GameService.swift */,
 			);
-			path = MultipeerUITests;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F662954E2BDCD8D900DB9712 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F662954F2BDCD8EE00DB9712 /* UserCharacter.swift */,
+				F653349B2BDE346600D9FD61 /* SelectCharacter.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F66295552BDCF66800DB9712 /* MultipeerConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				F66295562BDCF68B00DB9712 /* MPConnectionManager.swift */,
+				F6D18D592BDD4D5E007E1566 /* MPGameMove.swift */,
+				F6D18D5D2BDE0CC7007E1566 /* MPPeersView.swift */,
+			);
+			path = MultipeerConnectivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +294,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66295242BDCD60700DB9712 /* ContentView.swift in Sources */,
+				F66295572BDCF68B00DB9712 /* MPConnectionManager.swift in Sources */,
+				F6D18D5C2BDD5970007E1566 /* Ingredient.swift in Sources */,
+				F653349C2BDE346600D9FD61 /* SelectCharacter.swift in Sources */,
+				F65334982BDE32D900D9FD61 /* GameService.swift in Sources */,
+				F653349E2BDE354F00D9FD61 /* Menu.swift in Sources */,
+				F6D18D5E2BDE0CC7007E1566 /* MPPeersView.swift in Sources */,
+				F66295502BDCD8EE00DB9712 /* UserCharacter.swift in Sources */,
+				F66295532BDCE7F400DB9712 /* Lobby.swift in Sources */,
 				F66295222BDCD60700DB9712 /* MultipeerApp.swift in Sources */,
+				F6D18D5A2BDD4D5E007E1566 /* MPGameMove.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F66295332BDCD60800DB9712 /* MultipeerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F662953F2BDCD60800DB9712 /* MultipeerUITestsLaunchTests.swift in Sources */,
-				F662953D2BDCD60800DB9712 /* MultipeerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +467,8 @@
 				DEVELOPMENT_TEAM = 49V8Q5W76J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Multipeer/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Would like to play sushi game";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +498,8 @@
 				DEVELOPMENT_TEAM = 49V8Q5W76J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Multipeer/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Would like to play sushi game";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
