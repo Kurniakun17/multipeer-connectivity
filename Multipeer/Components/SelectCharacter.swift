@@ -10,10 +10,9 @@ import SwiftUI
 struct SelectCharacter: View {
     @Binding var isSheetOpen: Bool
     @Binding var selectedChar: String
-
     var body: some View {
         VStack {
-            UserCharacter(imgName: selectedChar != "" ? selectedChar : "red_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
+            UserCharacter(imgName: selectedChar != "" ? selectedChar : "red_user", isFlying: true, selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
                 .padding()
                 .background(Color.gray.opacity(0.1))
                 .cornerRadius(20)
@@ -26,14 +25,23 @@ struct SelectCharacter: View {
                     .fontWeight(.semibold)
                     .padding(.bottom, 12)
                 HStack {
-                    UserCharacter(imgName: "red_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
+                    UserCharacter(imgName: "white_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
                         .padding()
                         .background(Color.black.opacity(0.1))
                         .cornerRadius(20)
-                    UserCharacter(imgName: "green_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
+                        .frame(width: 100, height: 100)
+
+                    UserCharacter(imgName: "orange_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
                         .padding()
                         .background(Color.black.opacity(0.1))
                         .cornerRadius(20)
+                        .frame(width: 100, height: 100)
+
+                    UserCharacter(imgName: "yellow_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
+                        .padding()
+                        .background(Color.black.opacity(0.1))
+                        .cornerRadius(20)
+                        .frame(width: 100, height: 100)
                 }
 
                 HStack {
@@ -41,10 +49,18 @@ struct SelectCharacter: View {
                         .padding()
                         .background(Color.black.opacity(0.1))
                         .cornerRadius(20)
-                    UserCharacter(imgName: "yellow_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
+                        .frame(width: 100, height: 100)
+                    UserCharacter(imgName: "red_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
                         .padding()
                         .background(Color.black.opacity(0.1))
                         .cornerRadius(20)
+                        .frame(width: 100, height: 100)
+
+                    UserCharacter(imgName: "green_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
+                        .padding()
+                        .background(Color.black.opacity(0.1))
+                        .cornerRadius(20)
+                        .frame(width: 100, height: 100)
                 }
             }
             .padding(60)
@@ -52,6 +68,10 @@ struct SelectCharacter: View {
     }
 }
 
-#Preview {
-    SelectCharacter(isSheetOpen: .constant(false), selectedChar: .constant("red_user"))
+struct SelectCharacter_Previews: PreviewProvider {
+    @State var isSheetOpen = false
+    @State var selectedChar = "red_user"
+    static var previews: some View {
+        SelectCharacter(isSheetOpen: .constant(false), selectedChar: .constant("red_user"))
+    }
 }

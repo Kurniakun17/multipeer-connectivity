@@ -20,6 +20,7 @@ struct Ingredient {
     var id: Int
     var name: String
 
+    
     static func generate(id: Int) -> Ingredient {
         switch ingredientType[id] {
         case "sushi":

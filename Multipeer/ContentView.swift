@@ -7,9 +7,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var game = GameService()
-    @State var selectedChar: String = "red_user"
+    @State var selectedChar: String = "white_user"
     @State var isSheetOpen = false
+    @State var startGame = false
+    @StateObject var game = GameService()
 
     var body: some View {
         NavigationView {
@@ -19,9 +20,9 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
                 VStack {
-                    SelectCharacter(isSheetOpen: $isSheetOpen, selectedChar: $selectedChar)
+                    SelectCharacter(isSheetOpen: self.$isSheetOpen, selectedChar: self.$selectedChar)
                     NavigationLink {
-                        Lobby(selectedChar: selectedChar)
+                        Lobby(selectedChar: self.selectedChar, startGame: self.$startGame)
                     } label: {
                         Image("play")
                             .resizable()

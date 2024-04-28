@@ -73,10 +73,10 @@ class MPConnectionManager: NSObject, ObservableObject {
         availablePeers.removeAll()
     }
 
-    func send(gameMove: MPGameMove) {
+    func send(ingredient: MyIngredient) {
         if !session.connectedPeers.isEmpty {
             do {
-                if let data = gameMove.data() {
+                if let data = ingredient.data() {
                     try session.send(data, toPeers: session.connectedPeers, with: .reliable)
                 }
             } catch {
@@ -135,23 +135,10 @@ extension MPConnectionManager: MCSessionDelegate {
     }
 
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        if let gameMove = try? JSONDecoder().decode(MPGameMove.self, from: data) {
+        if let ingredient = try? JSONDecoder().decode(MyIngredient.self, from: data) {
             DispatchQueue.main.async {
-                switch gameMove.action {
-                case .start:
-                    break
-                case .give:
-                    if let ingredientId = gameMove.ingredientId {
-                        self.game?.appendItem(ingredientId: ingredientId)
-                    }
-                case .reset:
-                    print("Reset")
-                case .end:
-                    self.session.disconnect()
-                    self.isAvailableToPlay = true
-                }
+                self.game?.appendItem(ingredient: ingredient.name)
             }
-            print("Received data: \(gameMove)")
         }
     }
 

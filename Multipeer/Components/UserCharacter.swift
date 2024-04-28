@@ -9,25 +9,29 @@ import SwiftUI
 
 struct UserCharacter: View {
     var imgName: String
-    var isNavigating: Bool = false
-    @State var isAnimating = false
+    @State private var scaleBase: CGFloat = 0.9
+    @State var isFlying: Bool = false
     @Binding var selectedChar: String
     @Binding var isSheetOpen: Bool
-    @State var isActive: Bool = false
 
     var body: some View {
         Button(action: {
-            isAnimating.toggle()
             selectedChar = imgName
             isSheetOpen.toggle()
-            if isNavigating {
-                isActive = true
-            }
+
         }) {
             Image(imgName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .scaleEffect(x: isAnimating ? 0.9 : 1, y: isAnimating ? 0.9 : 1, anchor: .center)
+                .scaleEffect(scaleBase)
         }
+    }
+}
+
+struct UserCharacter_Previews: PreviewProvider {
+    @State static var selectedChar = "red_user"
+    @State static var isSheetOpen = false
+    static var previews: some View {
+        UserCharacter(imgName: "red_user", selectedChar: $selectedChar, isSheetOpen: $isSheetOpen)
     }
 }

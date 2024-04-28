@@ -8,19 +8,15 @@
 import Foundation
 
 enum ScreenPhase {
-    case menu, lobby, game, end
+    case menu, lobby, startGame, end
 }
 
 class GameService: ObservableObject {
-    @Published var myIngredients: [Ingredient] = []
+    @Published var highestIdx: Double = 1.0
+    @Published var ingredients: [MyIngredient] = []
+    @Published var screenPhase: ScreenPhase = .menu
 
-    var screenPhase: ScreenPhase = .menu
-
-    func setupScreen(phase: ScreenPhase) {
-        screenPhase = phase
-    }
-
-    func appendItem(ingredientId: Int) {
-        myIngredients.append(Ingredient.generate(id: ingredientId))
+    func appendItem(ingredient: String) {
+        ingredients.append(MyIngredient(name: ingredient))
     }
 }
